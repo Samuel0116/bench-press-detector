@@ -1,5 +1,5 @@
 class RepCounter:
-    def __init__(self, down_angle=45, up_angle=130):
+    def __init__(self, down_angle=35, up_angle=130):
         self.reps = 0
         self.stage = None
         self.down_angle = down_angle
