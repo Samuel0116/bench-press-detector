@@ -20,10 +20,4 @@ class VideoProcessor(VideoProcessorBase):
         return av.VideoFrame.from_ndarray(result_img, format="bgr24")
 
 st.title("🏋️ 即時臥推姿勢偵測器 + Reps 計數")
-# bar = st.progress(0)
-# for i in range(100):
-#     bar.progress(i + 1, f'目前進度 {i+1} %')
-#     time.sleep(0.05)
-
-#  bar.progress(100, '載入完成！')
 webrtc_streamer(key="bench-press", video_processor_factory=VideoProcessor)

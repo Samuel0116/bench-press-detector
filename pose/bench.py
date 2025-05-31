@@ -61,9 +61,6 @@ class Bench:
             count = self.counter.counter(angle_wrist_arm_shoulder)
             cv2.putText(frame, f'counter: {int(count)}', (10, 80),
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-
-            self.drawing.draw_landmarks(frame, results.pose_landmarks, mp.solutions.pose.POSE_CONNECTIONS)
-
         return frame
 
     # def run(self):
